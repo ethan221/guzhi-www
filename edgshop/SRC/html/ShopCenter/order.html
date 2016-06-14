@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>商城首页</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/my.css" />
+		<link rel="stylesheet" type="text/css" href="../css/banner.css"/>
+		<script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-ui-1.9.2.custom.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cxslide.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/allinone_thumbnailsBanner.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/jquery.imagezoom.min.js" ></script>
+		<script src="../js/my.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tree.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header class="bgimg">
+			<img src="../img/banner1.png" class="center-block mgmid"/>
+		</header>
+		<!--
+        	搜索 登录 购物车
+        -->
+		<div class="search-login container">
+			<img src="../img/edg_shop.png"/>
+			<div class="search-input">
+		        <div class="flexsearch">
+					<div class="flexsearch--wrapper">
+						<form class="flexsearch--form" action="#" method="post">
+							<div class="flexsearch--input-wrapper" style="font-size: 12px;">
+								<input class="flexsearch--input" type="search" placeholder="搜索" style="">
+							</div>
+							<!--<input class="flexsearch--submit" type="submit" value="➜">-->
+							<button class="flexsearch--submit" >
+								<span class="glyphicon glyphicon-search" aria-hidden="true" style=""></span>
+							</button>
+							<button id="dropdownMenu1" class="flexsearch--drop" data-toggle="dropdown">
+								所有类别
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="right:0;left: inherit;">
+							    <li><a href="#">Action</a></li>
+							    <li><a href="#">Another action</a></li>
+							    <li><a href="#">Something else here</a></li>
+							    <li><a href="#">Separated link</a></li>
+							</ul>
+						</form>
+					</div>
+				</div>
+	        </div>
+			<div class="log-reg">
+				<a href="#">登录</a>&nbsp;&nbsp;丨&nbsp;&nbsp;<a href="#">注册</a>
+				<img src="../img/cart.png"/>
+				<div class="tooltip top" role="tooltip">
+			      <div class="tooltip-arrow"></div>
+			      <div class="tooltip-inner">
+			        20
+			      </div>
+			    </div>
+			</div>
+		</div>
+		<div id="detail-top" class="container-fluid">
+			<div class="container" style="min-width: 1170px;">
+				<div class="row well">
+					<div class="row bs-wizard" style="border-bottom:0;">
+		                <div class="col-xs-4 bs-wizard-step complete">
+		                  <div class="text-center bs-wizard-stepnum">1.我的购物车</div>
+		                  <div class="progress"><div class="progress-bar"></div></div>
+		                  <a href="#" class="bs-wizard-dot"></a>
+		                </div>
+		                
+		                <div class="col-xs-4 bs-wizard-step complete"><!-- complete -->
+		                  <div class="text-center bs-wizard-stepnum">2.填写核对订单信息</div>
+		                  <div class="progress"><div class="progress-bar"></div></div>
+		                  <a href="#" class="bs-wizard-dot"></a>
+		                </div>
+		                <div class="col-xs-4 bs-wizard-step active"><!-- active -->
+		                  <div class="text-center bs-wizard-stepnum">3.成功提交订单</div>
+		                  <div class="progress"><div class="progress-bar"></div></div>
+		                  <a href="#" class="bs-wizard-dot"></a>
+		                </div>
+		            </div>
+				</div>
+				<div class="row well success-info-cont">
+					<div class="col-md-2 col-sm-2 col-xs-2">
+						<img class="center-block" src="../img/right-icon.png" />
+					</div>
+					<div class="col-md-10 col-sm-10  col-xs-10">
+						<div class="col-md-12 col-sm-12  col-xs-12" style="height: 45%;padding-left: 0;padding-bottom: 0;">
+							<div class="col-md-6 col-sm-6 col-xs-6 paysments"  style="padding-left: 0">
+								<h3 style="margin-top: 0;">订单提交成功，去付款喽~</h3>
+								<p>成功付款后，7天发货</p>
+								<p>请在 <span	>1小时59分</span> 内完成支付，超时将取消订单</p>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-6">
+								<p class="text-right">应付总额： <span class="payment ">¥1600</span> 元</p>
+								<div class="invo-info">订单详情&nbsp;<span class="glyphicon glyphicon-menu-down"></span></div>
+							</div>
+						</div>
+						<div id="reslut-info" class="col-md-12 col-sm-12  col-xs-12 paysments" style="height: 55%;padding-left: 0;padding-top: 20px;border-top: 1px solid gainsboro;">
+							<div class="col-md-12 col-sm-12  col-xs-12" style="padding-left: 0">
+								<p>订 单 号  ： <span>124124123213213123</span></p>
+								<p>收货信息：广东省广州市海珠区赤岗北路瑞福大厦</p>
+								<p>商品名称：广东省广州市海珠区赤岗北路瑞福大厦</p>
+								<p>配送时间：广东省广州市海珠区赤岗北路瑞福大厦</p>
+								<p>发票信息：广东省广州市海珠区赤岗北路瑞福大厦</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row well">
+					<h4 class="pay-ways">请选择一下支付方式付款</h4>
+					<h4 class="pay-img">支付平台<small> （大额支付推荐使用支付宝） </small></h4>
+					<div class="payimgs">
+						<img src="../img/zhifubao.png"/>
+						<img src="../img/weixin.png"/>
+						<img src="../img/yinlian.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#" title="回到顶部" class="scrollup text-center"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+		<footer class="">
+			<div class="container">
+				<div class="row fuwu">
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 mian">
+						<p>满<strong>128</strong>元免运费</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 zhen">
+						<p><strong>EDG</strong>官方正品保证</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 qi">
+						<p><strong>7天</strong>无理由退换</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 shun">
+						<p><strong>顺丰</strong>快递服务</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">购物指南</a></li>
+							<li><a href="#">常见问题</a></li>
+							<li><a href="#">注册登录</a></li>
+							<li><a href="#">购买</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">配送与支持</a></li>
+							<li><a href="#">配送方式</a></li>
+							<li><a href="#">在线支付</a></li>
+							<li><a href="#">快递信息</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">售后政策</a></li>
+							<li><a href="#">退款说明</a></li>
+							<li><a href="#">返修/退换</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">会员中心</a></li>
+							<li><a href="#">我的订单</a></li>
+							<li><a href="#">我的服务</a></li>
+							<li><a href="#">会员服务</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">服务邮箱</a></li>
+							<li><a href="#">热线电话</a></li>
+							<li><a href="#">联系地址</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+		<div id="success-fail" class="modal fade" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title">正在支付</h4>
+			    </div>
+		      	<div class="modal-body" style="min-height: 160px;">
+		      		<div id="pay-solution" class="row">
+		      			<div class="col-md-5">
+		      				<img src="../img/paying_img.png" />
+		      			</div>
+		      			<div class="col-md-6">
+		      				<div class="col-md-12">
+		      					<h3>支付成功了<br/><small><a style="color: red;" href="#">立即查看订单详情 ></a></small></h3>
+		      				</div>
+		      				<div class="col-md-12" style="border-top: 1px solid #BBBBBB;">
+		      					<h3>如果支付失败<br/><small><a href="#">查看支付常见问题 ></a></small></h3>
+		      				</div>
+		      			</div>
+		      		</div>
+		        	
+					
+		     	</div>
+		    </div>
+		  </div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var et = '2016-10-10 15:30:11';
+		function MillisecondToDate(msd) {
+		    var time = parseFloat(msd) / 1000;
+		    if (null != time && "" != time) {
+		        if (time > 60 && time < 60 * 60) {
+		            time = parseInt(time / 60.0) + "分钟" + parseInt((parseFloat(time / 60.0) -
+		                parseInt(time / 60.0)) * 60) + "秒";
+		        }
+		        else if (time >= 60 * 60) {
+		            time = parseInt(time / 3600.0) + "小时" + 
+		            	parseInt((parseFloat(time / 3600.0) - parseInt(time / 3600.0)) * 60) + "分钟" +
+		                parseInt((parseFloat((parseFloat(time / 3600.0) - parseInt(time / 3600.0)) * 60) -
+		                parseInt((parseFloat(time / 3600.0) - parseInt(time / 3600.0)) * 60)) * 60) + "秒";
+		        }
+		        else {
+		            time = parseInt(time) + "秒";
+		        }
+		    }
+		    return time;
+		}
+		
+		(function (et){
+			var endTime = new Date(et).getTime();
+			setInterval(function(){
+				var nowTime = new Date().getTime();
+				if(nowTime >= endTime){
+					alert('过期');
+				}else{
+					var minus = endTime - nowTime;
+					$(".paysments>p span").text(MillisecondToDate(minus));
+				}
+			},1000);
+		})(et);
+		$(function(){
+			$('#success-fail').modal('show');
+		});
+	</script>
+</html>

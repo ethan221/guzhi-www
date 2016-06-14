@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>商城首页</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/my.css" />
+		<link rel="stylesheet" type="text/css" href="../css/banner.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/city.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/address.css"/>
+		<script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-ui-1.9.2.custom.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cxslide.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/allinone_thumbnailsBanner.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/jquery.imagezoom.min.js" ></script>
+		<script src="../js/my.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tree.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/city.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header class="bgimg">
+			<img src="../img/banner1.png" class="center-block mgmid"/>
+		</header>
+		<!--
+        	搜索 登录 购物车
+        -->
+		<div class="search-login container">
+			<img src="../img/edg_shop.png"/>
+			<div class="search-input">
+		        <div class="flexsearch">
+					<div class="flexsearch--wrapper">
+						<form class="flexsearch--form" action="#" method="post">
+							<div class="flexsearch--input-wrapper" style="font-size: 12px;">
+								<input class="flexsearch--input" type="search" placeholder="搜索" style="">
+							</div>
+							<!--<input class="flexsearch--submit" type="submit" value="➜">-->
+							<button class="flexsearch--submit" >
+								<span class="glyphicon glyphicon-search" aria-hidden="true" style=""></span>
+							</button>
+							<button id="dropdownMenu1" class="flexsearch--drop" data-toggle="dropdown">
+								所有类别
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="right:0;left: inherit;">
+							    <li><a href="#">Action</a></li>
+							    <li><a href="#">Another action</a></li>
+							    <li><a href="#">Something else here</a></li>
+							    <li><a href="#">Separated link</a></li>
+							</ul>
+						</form>
+					</div>
+				</div>
+	        </div>
+			<div class="log-reg">
+				<a href="#">登录</a>&nbsp;&nbsp;丨&nbsp;&nbsp;<a href="#">注册</a>
+				<img src="../img/cart.png"/>
+				<div class="tooltip top" role="tooltip">
+			      <div class="tooltip-arrow"></div>
+			      <div class="tooltip-inner">
+			        20
+			      </div>
+			    </div>
+			</div>
+		</div>
+		<div id="detail-top" class="container-fluid">
+			<div class="container" style="min-width: 1170px;">
+				<div class="row well">
+					<div class="row bs-wizard" style="border-bottom:0;">
+		                <div class="col-xs-4 bs-wizard-step complete">
+		                  <div class="text-center bs-wizard-stepnum">1.我的购物车</div>
+		                  <div class="progress"><div class="progress-bar"></div></div>
+		                  <a href="#" class="bs-wizard-dot"></a>
+		                </div>
+		                <div class="col-xs-4 bs-wizard-step active"><!-- complete -->
+		                  <div class="text-center bs-wizard-stepnum">2.填写核对订单信息</div>
+		                  <div class="progress"><div class="progress-bar"></div></div>
+		                  <a href="#" class="bs-wizard-dot"></a>
+		                </div>
+		                <div class="col-xs-4 bs-wizard-step disabled"><!-- active -->
+		                  <div class="text-center bs-wizard-stepnum">3.成功提交订单</div>
+		                  <div class="progress"><div class="progress-bar"></div></div>
+		                  <a href="#" class="bs-wizard-dot"></a>
+		                </div>
+		            </div>
+				</div>
+				<div class="row well receipts">
+					<h3>收货人信息&nbsp;&nbsp;<small>(请填写并核对您的订单信息)</small></h3>
+					<div class="receipt-info">
+						<table border="0" class="table">
+							<tbody>
+								<tr>
+									<td>张三</td>
+									<td>广东省广州市海珠区赤岗北路瑞福大厦</td>
+									<td>13233332222</td>
+									<td><button class="btn btn-default" disabled="disabled">默认地址</button></td>
+								</tr>
+								<tr>
+									<td>李四</td>
+									<td>广东省广州市海珠区赤岗北路瑞福大厦</td>
+									<td>13233332222</td>
+									<td><button class="btn btn-red">默认地址</button><button type="button" class="btn btn-link" data-toggle="modal" data-target=".bs-example-modal-sm">删除</button></td>
+								</tr>
+								<tr>
+									<td>王八</td>
+									<td>广东省广州市海珠区赤岗北路瑞福大厦</td>
+									<td>13233332222</td>
+									<td><button class="btn btn-red" >默认地址</button><button type="button" class="btn btn-link">删除</button></td>
+								</tr>
+								<tr>
+									<td>刘丹</td>
+									<td>广东省广州市海珠区赤岗北路瑞福大厦</td>
+									<td>13233332222</td>
+									<td><button class="btn btn-red" >默认地址</button><button type="button" class="btn btn-link">删除</button></td>
+								</tr>
+								<tr>
+									<td>王八</td>
+									<td>广东省广州市海珠区赤岗北路瑞福大厦</td>
+									<td>13233332222</td>
+									<td><button class="btn btn-red">默认地址</button><button type="button" class="btn btn-link">删除</button></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="more-add">更多地址&nbsp;<span class="glyphicon glyphicon-menu-down"></span></div>
+					</div>
+					<button id="add-address" class="pull-right btn btn-red" style="margin-top: 15px;">添加收货地址</button>
+				</div>
+				<div id="cart-content" class="row settle">
+					<table class="table table-hover" >
+				      <thead>
+				        <tr>
+				          <th width="30px"><input type="checkbox" id="allSelect" class="checkbox-inline"/></th>
+				          <th width="110px" style="text-align: left;">全选</th>
+				          <th width="328px">商品</th>
+				          <th>规格</th>
+				          <th>单价(元)</th>
+				          <th width="136px">数量</th>
+				          <th>小计(元)</th>
+				          <th>操作</th>
+				        </tr>
+				      </thead>
+				      <tbody>
+				        <tr>
+				          <th scope="row"><input type="checkbox" class="checkbox-inline"/></th>
+				          <td><img src="../img/cart/c1.png" alt="" /></td>
+				          <td style="vertical-align: top;">
+				          	<p>MADNESS MAN BASEBALL JACKET <br />潮流白色夹克衫</p>
+						  </td>
+				          <td class="text-center"><p>颜色：黑色<br />尺寸：XL</p></td>
+				          <td class="text-center">800</td>
+				          <td>
+				          	<div class="input-group input-group-sm">
+								  <span class="input-group-addon" act="minus"><span class="glyphicon glyphicon-minus"></span></span>
+								  <input type="text" class="form-control text-center" onkeyup="if(/\D/.test(this.value)){this.value=this.value.substring(0,this.value.length-1);}" value="1">
+								  <span class="input-group-addon" act="plus"><span class="glyphicon glyphicon-plus"></span></span>
+							</div>
+				          </td>
+				          <td class="text-center" class="count-number">800</td>
+				          <td class="text-center"><button type="button" class="btn btn-default">删除</button></td>
+				        </tr>
+				        <tr>
+				          <th scope="row"><input type="checkbox" class="checkbox-inline"/></th>
+				          <td><img src="../img/cart/c1.png" alt="" /></td>
+				          <td style="vertical-align: top;">
+				          	<p>MADNESS MAN BASEBALL JACKET <br />潮流白色夹克衫</p>
+						  </td>
+				          <td class="text-center"><p>颜色：黑色<br />尺寸：XL</p></td>
+				          <td class="text-center">800</td>
+				          <td>
+				          	<div class="input-group input-group-sm">
+								  <span class="input-group-addon" act="minus"><span class="glyphicon glyphicon-minus"></span></span>
+								  <input type="text" class="form-control text-center" onkeyup="if(/\D/.test(this.value)){this.value=this.value.substring(0,this.value.length-1);}" value="1">
+								  <span class="input-group-addon" act="plus"><span class="glyphicon glyphicon-plus"></span></span>
+							</div>
+				          </td>
+				          <td class="text-center" class="count-number">800</td>
+				          <td class="text-center"><button type="button" class="btn btn-default">删除</button></td>
+				        </tr>
+				        <tr>
+				          <th scope="row"><input type="checkbox" class="checkbox-inline"/></th>
+				          <td><img src="../img/cart/c1.png" alt="" /></td>
+				          <td style="vertical-align: top;">
+				          	<p>MADNESS MAN BASEBALL JACKET <br />潮流白色夹克衫</p>
+						  </td>
+				          <td class="text-center"><p>颜色：黑色<br />尺寸：XL</p></td>
+				          <td class="text-center">800</td>
+				          <td>
+				          	<div class="input-group input-group-sm">
+								  <span class="input-group-addon" act="minus"><span class="glyphicon glyphicon-minus"></span></span>
+								  <input type="text" class="form-control text-center" onkeyup="if(/\D/.test(this.value)){this.value=this.value.substring(0,this.value.length-1);}" value="1">
+								  <span class="input-group-addon" act="plus"><span class="glyphicon glyphicon-plus"></span></span>
+							</div>
+				          </td>
+				          <td class="text-center" class="count-number">800</td>
+				          <td class="text-center"><button type="button" class="btn btn-default">删除</button></td>
+				        </tr>
+				        <tr>
+				          <th scope="row"><input type="checkbox" class="checkbox-inline"/></th>
+				          <td><img src="../img/cart/c1.png" alt="" /></td>
+				          <td style="vertical-align: top;">
+				          	<p>MADNESS MAN BASEBALL JACKET <br />潮流白色夹克衫</p>
+						  </td>
+				          <td class="text-center"><p>颜色：黑色<br />尺寸：XL</p></td>
+				          <td class="text-center">800</td>
+				          <td>
+				          	<div class="input-group input-group-sm">
+								  <span class="input-group-addon" act="minus"><span class="glyphicon glyphicon-minus"></span></span>
+								  <input type="text" class="form-control text-center" onkeyup="if(/\D/.test(this.value)){this.value=this.value.substring(0,this.value.length-1);}" value="1">
+								  <span class="input-group-addon" act="plus"><span class="glyphicon glyphicon-plus"></span></span>
+							</div>
+				          </td>
+				          <td class="text-center" class="count-number">800</td>
+				          <td class="text-center"><button type="button" class="btn btn-default">删除</button></td>
+				        </tr>
+				        <tr>
+				          <th scope="row"><input type="checkbox" class="checkbox-inline"/></th>
+				          <td><img src="../img/cart/c1.png" alt="" /></td>
+				          <td style="vertical-align: top;">
+				          	<p>MADNESS MAN BASEBALL JACKET <br />潮流白色夹克衫</p>
+						  </td>
+				          <td class="text-center"><p>颜色：黑色<br />尺寸：XL</p></td>
+				          <td class="text-center">800</td>
+				          <td>
+				          	<div class="input-group input-group-sm">
+								  <span class="input-group-addon" act="minus"><span class="glyphicon glyphicon-minus"></span></span>
+								  <input type="text" class="form-control text-center" onkeyup="if(/\D/.test(this.value)){this.value=this.value.substring(0,this.value.length-1);}" value="1">
+								  <span class="input-group-addon" act="plus"><span class="glyphicon glyphicon-plus"></span></span>
+							</div>
+				          </td>
+				          <td class="text-center" class="count-number">800</td>
+				          <td class="text-center">
+				          		<button type="button" class="btn btn-default">删除</button>
+		
+							</td>
+				        </tr>
+				      </tbody>
+				    </table>
+				    <div class="foot-page">
+								<nav class="">
+								  	<ul class="pagination">
+								        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+								        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+								        <li><a href="#">2</a></li>
+								        <li><a href="#">3</a></li>
+								        <li><a href="#">4</a></li>
+								        <li><a href="#">5</a></li>
+								        <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+								        <li>
+								        	共4页，到第<input class="form-control" type="text" name="page"/>页 
+								        	<button class="btn btn-danger btn-sm">确认</button>
+										</li>
+								     </ul>
+								</nav>
+							</div>
+				</div>
+				<div class="row well invoice">
+					<h4>发票信息</h4>
+					<h4>发票抬头<input type="text" class="form-control invoice-info" placeholder="请输入抬头信息"/><br />
+						<small class="inspec">*发票内容与您的消费记录一直</small>
+					</h4>
+				</div>
+				<div class="row well favorable">
+					<h4>可用优惠券</h4>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios"  value="option1">
+					    春季特惠满100-10优惠券
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios"  value="option2">
+					    春季特惠满100-10优惠券
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios"  value="option3">
+					    春季特惠满100-10优惠券
+					  </label>
+					</div>
+				</div>
+				<div class="well row">
+					<p class="text-right">2件商品，合计金额为：¥1600元</p>
+					<p class="text-right">优惠金额：-无</p>
+					<p class="text-right">运费：¥0元</p>
+					<p class="text-right">应付总额：<span class="payment ">¥1600</span></p>
+					<p class="text-right gray-add">寄送地址：张三 广东省广州市海珠区赤岗北路瑞福大厦 13233332222</p>
+				</div>
+				<button class="btn btn-red btn-lg pull-right btn-sp-lg">提交订单</button>
+			</div>
+		</div>
+		<a href="#" title="回到顶部" class="scrollup text-center"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body" style="min-height: 160px;">
+		        <p class="text-center center-block" style="margin-top: 60px;">确定删除这个收货地址？</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+		        <button type="button" class="btn btn-primary btn-black">确定</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div id="addaddress" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="gridSystemModalLabel">添加收货地址</h4>
+			      </div>
+		      <div class="modal-body" style="min-height: 160px;">
+		        <div class="main-content Address">
+						<div class="body-div" id="comment-list" style="min-height: 160px;">
+							<form id="addReceipt" name="form1" style="height: 260px;border: 0;margin: 0;">
+								<div class="infolist" style="margin-left: 8px;padding-left: 4em;">
+	                            <lable>所在地区   </lable>
+	                            <div class="liststyle">
+	                                <span id="Province">
+	                                    <i>请选择省份</i>
+	                                    <ul>
+	                                        <li><a href="javascript:void(0)" alt="请选择省份">请选择省份</a></li>
+	                                    </ul>
+	                                    <input type="hidden" name="cho_Province" value="请选择省份">
+	                                </span>
+	                                <span id="City">
+	                                    <i>请选择城市</i>
+	                                    <ul>
+	                                        <li><a href="javascript:void(0)" alt="请选择城市">请选择城市</a></li>
+	                                    </ul>
+	                                    <input type="hidden" name="cho_City" value="请选择城市">
+	                                </span>
+	                                <span id="Area">
+	                                    <i>请选择地区</i>
+	                                    <ul>
+	                                        <li><a href="javascript:void(0)" alt="请选择地区">请选择地区</a></li>
+	                                    </ul>
+	                                    <input type="hidden" name="cho_Area" value="请选择地区">
+	                                </span>
+	                            </div>
+	                        </div>
+								<span class="pull-left for-form">详细地址</span><input type="text" name="account" class="form-control form-address pull-left" placeholder="请输入您的手机号码" autofocus /><br />
+					    		<span class="pull-left for-form">详细地址</span><input type="text" name="account" class="form-control form-address pull-left" placeholder="请输入您的手机号码" autofocus /><br />
+					    		<span class="pull-left for-form">详细地址</span><input type="text" name="account" class="form-control form-address pull-left" placeholder="请输入您的手机号码" autofocus /><br />
+					    		<input name="Fruit" type="checkbox" value="dd" style="float: left;margin-top: 8px;"/><span style="line-height:2em;float: left;">设为默认</span>
+							</form>
+						</div>
+					</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-primary btn-black" data-dismiss="modal">确定</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<footer class="">
+			<div class="container">
+				<div class="row fuwu">
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 mian">
+						<p>满<strong>128</strong>元免运费</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 zhen">
+						<p><strong>EDG</strong>官方正品保证</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 qi">
+						<p><strong>7天</strong>无理由退换</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 shun">
+						<p><strong>顺丰</strong>快递服务</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">购物指南</a></li>
+							<li><a href="#">常见问题</a></li>
+							<li><a href="#">注册登录</a></li>
+							<li><a href="#">购买</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">配送与支持</a></li>
+							<li><a href="#">配送方式</a></li>
+							<li><a href="#">在线支付</a></li>
+							<li><a href="#">快递信息</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">售后政策</a></li>
+							<li><a href="#">退款说明</a></li>
+							<li><a href="#">返修/退换</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">会员中心</a></li>
+							<li><a href="#">我的订单</a></li>
+							<li><a href="#">我的服务</a></li>
+							<li><a href="#">会员服务</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">服务邮箱</a></li>
+							<li><a href="#">热线电话</a></li>
+							<li><a href="#">联系地址</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+	</body>
+</html>

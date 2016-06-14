@@ -1,0 +1,17 @@
+body {background:#fff;font-family: "微软雅黑";}
+.btn,.hint2,.hint-shut{cursor: pointer;}
+.top{height: 154px;width: 100%;position: relative;background: url(../images/top.jpg) center center  #fff no-repeat;}
+.nav{height: 45px;width: 100%;position: relative;background: url(../images/nav.jpg) center center  #000 no-repeat;}
+.left,.right{height: 500px;background: gray;}
+.left{margin-right: 15px;}
+.right{padding-left: 50px;}
+
+
+/*modal*/
+.modal-wrap{display: none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:10;background:rgba(0,0,0,0.6);}
+.hint{width:457px;height:318px;margin:0 auto;background:#fff;position:fixed;top:50%;left:50%;margin-left:-250px;margin-top:-166px;z-index:999;display:-none;border-radius:10px;border: 2px #fff solid;}
+.hint-shut{position: absolute;top:-1em;right: -1em;width: 3em;height: 3em;}
+.hint-in1{width:454px;height:70px;background:#000;position:absolute;bottom: 0;border-bottom-right-radius:10px;border-bottom-left-radius:10px;}
+.hint2{line-height:70px;color:#fff;font-size:1.5em;text-align: center;}
+.hint-in2{height: 200px;width: 100%;margin:80px 0;line-height:1.6em;font-size:1.8em; text-align:center;color:#000;}
+#registed{display: none;}

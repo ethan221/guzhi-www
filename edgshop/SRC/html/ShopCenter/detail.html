@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>商城首页</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/my.css" />
+		<link rel="stylesheet" type="text/css" href="../css/banner.css"/>
+		<script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-ui-1.9.2.custom.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cxslide.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/allinone_thumbnailsBanner.js" type="text/javascript" charset="utf-8"></script>
+				<script type="text/javascript" src="../js/jquery.imagezoom.min.js" ></script>
+		<script src="../js/my.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tree.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body style="background-color: whitesmoke;">
+		<header class="bgimg">
+			<img src="../img/banner1.png" class="center-block mgmid" />
+		</header>
+		<!--
+        	搜索 登录 购物车
+        -->
+		<div class="search-login container" >
+		  	<img src="../img/edg_shop.png"/>
+			<div class="search-input">
+		        <div class="flexsearch" style="display: none;">
+					<div class="flexsearch--wrapper">
+						<form class="flexsearch--form" action="#" method="post">
+							<div class="flexsearch--input-wrapper" style="font-size: 12px;">
+								<input class="flexsearch--input" type="search" placeholder="搜索" style="">
+							</div>
+							<button class="flexsearch--submit" >
+								<span class="glyphicon glyphicon-search" aria-hidden="true" style=""></span>
+							</button>
+							<button id="dropdownMenu1" class="flexsearch--drop" data-toggle="dropdown">
+								所有类别
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="right:0;left: inherit;">
+							    <li><a href="#">Action</a></li>
+							    <li><a href="#">Another action</a></li>
+							    <li><a href="#">Something else here</a></li>
+							    <li><a href="#">Separated link</a></li>
+							</ul>
+						</form>
+					</div>
+				</div>
+	        </div>
+			<div class="log-reg">
+				<a class="btn btn-default btn-sm" href="#">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-default btn-sm" href="#">注册</a>
+				<img src="../img/cart.png"/>
+				<div class="tooltip top" role="tooltip">
+			      <div class="tooltip-arrow"></div>
+			      <div class="tooltip-inner">
+			        20
+			      </div>
+			    </div>
+			</div>
+		</div>
+		<!--
+        	Menu
+        -->
+		<nav class="navbar navbar-inverse rd0">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <a class="navbar-brand hover-red" href="#">首页</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="egd-nav">
+		      <ul class="nav navbar-nav">        
+		        <li style="position: relative;">
+		        	<a href="#">上衣</a>
+		        	<div class="tooltip top" role="tooltip" >
+				      <div class="tooltip-arrow"></div>
+				      <div class="tooltip-inner">
+				        new
+				      </div>
+				    </div>
+		        </li>
+		        <li><a href="#">裤子</a></li>
+		        <li><a href="#">鞋子</a></li>
+		        <li><a href="#">外设</a></li>
+		        <li><a href="#">创意</a></li>
+		      </ul>
+		      
+		    </div>
+		  </div>
+		</nav>
+		<div class="alert alert-success levi-alert-success">
+				成功添加商品<a href="http://www.edgteam.cn/208.html"><strong>[&nbsp;EDG棒球帽 经典对标&nbsp;]</strong></a> 
+				到您的 <a href="http://www.edgteam.cn/checkout/cart"><strong>[&nbsp;购物车&nbsp;]</strong></a>！
+				<button type="button" class="close" data-dismiss="alert">×</button>
+		</div>
+		<!--
+			详细页
+		-->
+		<div id="detail-top" class="container-fluid">
+			<div class="container" style="min-width: 1170px;">
+				<div class="row well">
+					<div class="pull-left" style="width: 450px;margin-top: -30px;">
+						<div id="banner-div-thumbs">
+						  <div style="width: 420px;;margin: 0 auto; padding:10px 0 0 0;"> 
+						    <div style="width: 420px; height:512px; margin:20px auto 0 auto;">
+						      <div id="allinone_thumbnailsBanner" style="display:none;">
+						        <ul class="allinone_thumbnailsBanner_list">
+						          <!-- IMAGES -->
+						          <li data-bottom-thumb="../img/detail/detail_4.png">
+						          	<img src="../img/detail/detail_4.png" alt="" />
+						          </li>
+						          <li data-bottom-thumb="../img/detail/detail_2.png">
+						          	<img src="../img/detail/detail_2.png" alt="" />
+						          </li>
+						          <li data-bottom-thumb="../img/detail/detail_3.png">
+						          	<img src="../img/detail/detail_3.png" alt="" />
+						          </li>
+						          <li data-bottom-thumb="../img/detail/detail_6.png">
+						          	<img src="../img/detail/detail_6.png" alt="" />
+						          </li>
+						          <li data-bottom-thumb="../img/detail/detail_4.png">
+						          	<img src="../img/detail/detail_4.png" alt="" />
+						          </li>
+						          <li data-bottom-thumb="../img/detail/detail_6.png">
+						          	<img src="../img/detail/detail_6.png" alt="" />
+						          </li>
+						          <li data-bottom-thumb="../img/detail/detail_4.png">
+						          	<img src="../img/detail/detail_4.png" alt="" />
+						          </li>
+						          <li data-bottom-thumb="../img/detail/detail_2.png">
+						          	<img src="../img/detail/detail_4.png" alt="" />
+						          </li>
+						          <li data-bottom-thumb="../img/detail/detail_3.png">
+						          	<img src="../img/detail/detail_3.png" alt="" />
+						          </li>
+						          <li data-bottom-thumb="../img/detail/detail_6.png">
+						          	<img src="../img/detail/detail_6.png" alt="" />
+						          </li>
+						        </ul>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="pull-left title-line">
+						<div class="col-md-12">
+							<strong>Life·after Life 泼墨印花拼接束脚裤</strong>
+							<div class="pull-right icons">
+								<img src="../img/mian_icon.png"  />
+								<img src="../img/zhen_icon.png"  />
+								<img src="../img/qi_icon.png"  />
+							</div>
+						</div>
+						<div class="col-md-12">
+							<small>Life·after Life</small>
+						</div>
+						<div class="col-md-12 yen">
+							<small>官方价:</small>
+							<span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>
+							<strong>144.00</strong>
+						</div>
+						<div class="col-md-12 promot">
+							<span class="label label-primary">促销:</span>
+							<span class="promot-info">至4月23号裤子满100减10不封顶</span>
+						</div>
+						<div class="col-md-12 yen size-select">
+								<small>尺码选择：</small>
+								<div class="pull-left">
+									<a class="btn btn-default">S码</a>
+									<a class="btn btn-default selected">M码</a>
+									<a class="btn btn-default">L码</a>
+									<a class="btn btn-default">XL码</a>
+									<a class="btn btn-default">XXL码</a>
+									<a class="btn btn-default">XXXL码</a>
+								</div>
+						</div>
+						<div class="col-md-12 yen color-select">
+								<small>选&nbsp;颜&nbsp;色&nbsp;：</small>
+								<div class="pull-left">
+										<img class="selected" src="../img/detail/thumbs_img/t1.png" />
+										<img src="../img/detail/thumbs_img/t1.png" />
+								</div>
+						</div>
+						<div class="col-md-12 yen count-select">
+								<small>选择数量：</small>
+								<div class="pull-left">
+									<button class="btn btn-red" disabled="disabled" act="minus"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-minus"></span></button>
+									<input value="1" class="form-control" type="text" onkeyup="if(/\D/.test(this.value)){this.value=this.value.substring(0,this.value.length-1);}"/>
+									<button class="btn btn-red" act="plus"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-plus"></span></button>
+								</div>
+						</div>
+						<div class="col-md-12 yen add-buy">
+								<small></small>
+								<div class="pull-left">
+									<button class="btn btn-red btn-lg" act="minus"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>添加到购物车</button>
+									<button class="btn btn-buy btn-lg" act="plus">立即购买</button>
+								</div>
+						</div>
+					</div>
+					<div class="col-md-12 production-details">
+						    <ul class="nav nav-tabs" role="tablist">
+							    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">商品介绍</a></li>
+							    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">售后保障</a></li>
+							    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">商品评价</a></li>
+						    </ul>
+							<div class="tab-content">
+							    <div role="tabpanel" class="tab-pane active htmls-content" id="home">
+									<div class="row">
+										<div class="col-md-12 pd-info">
+											<p>商品名称：<span>森马男士休闲裤</span></p>
+											<p>裤型：<span>直筒裤</span></p>
+											<p>流行元素：<span>简约</span></p>
+										</div>
+										<div class="col-md-12 pd-info">
+											<p>商品名称：<span>森马男士休闲裤</span></p>
+											<p>裤型：<span>直筒裤</span></p>
+											<p>流行元素：<span>简约</span></p>
+										</div>
+										<div class="col-md-12 pd-info">
+											<p>商品名称：<span>森马男士休闲裤</span></p>
+											<p>裤型：<span>直筒裤</span></p>
+											<p>流行元素：<span>简约</span></p>
+										</div>
+										<div class="col-md-12 pd-info">
+											<p>商品名称：<span>森马男士休闲裤</span></p>
+											<p>裤型：<span>直筒裤</span></p>
+											<p>流行元素：<span>简约</span></p>
+										</div>
+										<div class="col-md-12 pd-info">
+											<p>商品名称：<span>森马男士休闲裤</span></p>
+											<p>裤型：<span>直筒裤</span></p>
+											<p>流行元素：<span>简约</span></p>
+										</div>
+									</div>
+									<!--
+                                    	图文混排区
+                                    -->
+									<div class="row" style="min-height: 700px;margin: 0 auto;width: 760px;">
+                                		
+									</div>
+							    </div>
+							    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+							    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+							</div>
+						</div>
+					</div>
+					<div class="row detai-comment">
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title"><strong>商品评价</strong></h3>
+						  </div>
+						  <div class="panel-body">
+						  	<div class="row comment-info">
+						  		<div class="col-md-10">
+						  			<div id="starBg" class="star_bg">
+									    <input type="radio" id="starScore1" class="score score_1" value="1" name="score">
+									    <a href="#starScore1" class="star star_1" title="差"><label for="starScore1">差</label></a>
+									    <input type="radio" id="starScore2" class="score score_2" value="2" name="score">
+									    <a href="#starScore2" class="star star_2" title="较差"><label for="starScore2">较差</label></a>
+									    <input type="radio" id="starScore3" class="score score_3" value="3" name="score">
+									    <a href="#starScore3" class="star star_3" title="普通"><label for="starScore3">普通</label></a>
+									    <input type="radio" id="starScore4" class="score score_4" value="4" name="score">
+									    <a href="#starScore4" class="star star_4" title="较好"><label for="starScore4">较好</label></a>
+									    <input type="radio" id="starScore5" class="score score_5" value="5" name="score">
+									    <a href="#5" class="star star_5" title="好"><label for="starScore5">好</label></a>
+									</div>
+									<div class="comment-content">非常帅的裤子啊！</div>
+									<p class="fist-p">收货两天后评论</p>
+									<p>2016-04-10 20:20</p>
+									<p>枚红色 XL现货</p>
+						  		</div>
+						  		<div class="col-md-2 head-info-content">
+						  			<img class="center-block" src="../img/headicon.png"/>
+						  			<span>辣****鸡</span>
+						  		</div>
+						  	</div>
+						    <div class="row comment-info">
+						  		<div class="col-md-10">
+						  			<div id="starBg" class="star_bg">
+									    <input type="radio" id="starScore1" class="score score_1" value="1" name="score">
+									    <a href="#starScore1" class="star star_1" title="差"><label for="starScore1">差</label></a>
+									    <input type="radio" id="starScore2" class="score score_2" value="2" name="score">
+									    <a href="#starScore2" class="star star_2" title="较差"><label for="starScore2">较差</label></a>
+									    <input type="radio" id="starScore3" class="score score_3" value="3" name="score">
+									    <a href="#starScore3" class="star star_3" title="普通"><label for="starScore3">普通</label></a>
+									    <input type="radio" id="starScore4" class="score score_4" value="4" name="score">
+									    <a href="#starScore4" class="star star_4" title="较好"><label for="starScore4">较好</label></a>
+									    <input type="radio" id="starScore5" class="score score_5" value="5" name="score">
+									    <a href="#5" class="star star_5" title="好"><label for="starScore5">好</label></a>
+									</div>
+									<div class="comment-content">非常帅的裤子啊！</div>
+									<p class="fist-p">收货两天后评论</p>
+									<p>2016-04-10 20:20</p>
+									<p>枚红色 XL现货</p>
+						  		</div>
+						  		<div class="col-md-2 head-info-content">
+						  			<img class="center-block" src="../img/headicon.png"/>
+						  			<span>辣****鸡</span>
+						  		</div>
+						  	</div>
+						  	<div class="row comment-info">
+						  		<div class="col-md-10">
+						  			<div id="starBg" class="star_bg">
+									    <input type="radio" id="starScore1" class="score score_1" value="1" name="score">
+									    <a href="#starScore1" class="star star_1" title="差"><label for="starScore1">差</label></a>
+									    <input type="radio" id="starScore2" class="score score_2" value="2" name="score">
+									    <a href="#starScore2" class="star star_2" title="较差"><label for="starScore2">较差</label></a>
+									    <input type="radio" id="starScore3" class="score score_3" value="3" name="score">
+									    <a href="#starScore3" class="star star_3" title="普通"><label for="starScore3">普通</label></a>
+									    <input type="radio" id="starScore4" class="score score_4" value="4" name="score">
+									    <a href="#starScore4" class="star star_4" title="较好"><label for="starScore4">较好</label></a>
+									    <input type="radio" id="starScore5" class="score score_5" value="5" name="score">
+									    <a href="#5" class="star star_5" title="好"><label for="starScore5">好</label></a>
+									</div>
+									<div class="comment-content">非常帅的裤子啊！</div>
+									<p class="fist-p">收货两天后评论</p>
+									<p>2016-04-10 20:20</p>
+									<p>枚红色 XL现货</p>
+						  		</div>
+						  		<div class="col-md-2 head-info-content">
+						  			<img class="center-block" src="../img/headicon.png"/>
+						  			<span>辣****鸡</span>
+						  		</div>
+						  	</div>
+						  	<div class="row comment-info">
+						  		<div class="col-md-10">
+						  			<div id="starBg" class="star_bg">
+									    <input type="radio" id="starScore1" class="score score_1" value="1" name="score">
+									    <a href="#starScore1" class="star star_1" title="差"><label for="starScore1">差</label></a>
+									    <input type="radio" id="starScore2" class="score score_2" value="2" name="score">
+									    <a href="#starScore2" class="star star_2" title="较差"><label for="starScore2">较差</label></a>
+									    <input type="radio" id="starScore3" class="score score_3" value="3" name="score">
+									    <a href="#starScore3" class="star star_3" title="普通"><label for="starScore3">普通</label></a>
+									    <input type="radio" id="starScore4" class="score score_4" value="4" name="score">
+									    <a href="#starScore4" class="star star_4" title="较好"><label for="starScore4">较好</label></a>
+									    <input type="radio" id="starScore5" class="score score_5" value="5" name="score">
+									    <a href="#5" class="star star_5" title="好"><label for="starScore5">好</label></a>
+									</div>
+									<div class="comment-content">非常帅的裤子啊！</div>
+									<p class="fist-p">收货两天后评论</p>
+									<p>2016-04-10 20:20</p>
+									<p>枚红色 XL现货</p>
+						  		</div>
+						  		<div class="col-md-2 head-info-content">
+						  			<img class="center-block" src="../img/headicon.png"/>
+						  			<span>辣****鸡</span>
+						  		</div>
+						  	</div>
+						  <div class="foot-page">
+								<nav class="">
+								  	<ul class="pagination" style="margin: 0;">
+								        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+								        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+								        <li><a href="#">2</a></li>
+								        <li><a href="#">3</a></li>
+								        <li><a href="#">4</a></li>
+								        <li><a href="#">5</a></li>
+								        <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+								        <li>
+								        	共4页，到第<input class="form-control" type="text" name="page"/>页 
+								        	<button class="btn btn-danger btn-sm">确认</button>
+										</li>
+								     </ul>
+								</nav>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="row you-would-like">
+						<div class="panel panel-default">
+						    <div class="panel-heading">
+						        <h3 class="panel-title"><strong>猜你喜欢</strong></h3>
+						    </div>
+						    <div class="panel-body">
+						    	<div class="box-pre">
+									<div class="picbox">
+										<ul class="piclist mainlist">
+											<li>
+												<a href="#" target="_blank"><img src="../img/detail/thumbs_img/t1.png" /></a>
+												<p class="text-center"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>149</p>
+											</li>
+											<li><a href="#" target="_blank"><img src="../img/detail/thumbs_img/t2.png" /></a><p class="text-center"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>149</p></li>
+											<li><a href="#" target="_blank"><img src="../img/detail/thumbs_img/t1.png" /></a><p class="text-center"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>149</p></li>
+											<li><a href="#" target="_blank"><img src="../img/detail/thumbs_img/t2.png" /></a><p class="text-center"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>149</p></li>
+											<li><a href="#" target="_blank"><img src="../img/detail/thumbs_img/t1.png" /></a><p class="text-center"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>149</p></li>
+								            <li><a href="#" target="_blank"><img src="../img/detail/thumbs_img/t2.png" /></a><p class="text-center"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>149</p></li>
+											<li><a href="#" target="_blank"><img src="../img/detail/thumbs_img/t1.png" /></a><p class="text-center"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>149</p></li>
+											<li><a href="#" target="_blank"><img src="../img/detail/thumbs_img/t2.png" /></a><p class="text-center"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>149</p></li>
+											<li><a href="#" target="_blank"><img src="../img/detail/thumbs_img/t1.png" /></a><p class="text-center"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>149</p></li>
+											<li><a href="#" target="_blank"><img src="../img/detail/thumbs_img/t2.png" /></a><p class="text-center"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>149</p></li>
+											<li><a href="#" target="_blank"><img src="../img/detail/thumbs_img/t1.png" /></a><p class="text-center"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>149</p></li>
+								            <li><a href="#" target="_blank"><img src="../img/detail/thumbs_img/t2.png" /></a><p class="text-center"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>149</p></li>
+											<li><a href="#" target="_blank"><img src="../img/detail/thumbs_img/t1.png" /></a><p class="text-center"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>149</p></li>
+											<li><a href="#" target="_blank"><img src="../img/detail/thumbs_img/t2.png" /></a><p class="text-center"><span style='font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;' class="glyphicon glyphicon-yen " aria-hidden="true"></span>149</p></li>
+										</ul>
+								        <ul class="piclist swaplist"></ul>
+									</div>
+									<div class="og_prev"></div>
+									<div class="og_next"></div>
+								</div>
+					  		</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#" title="回到顶部" class="scrollup text-center"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+		<footer class="">
+			<div class="container">
+				<div class="row fuwu">
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 mian">
+						<p>满<strong>128</strong>元免运费</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 zhen">
+						<p><strong>EDG</strong>官方正品保证</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 qi">
+						<p><strong>7天</strong>无理由退换</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 shun">
+						<p><strong>顺丰</strong>快递服务</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">购物指南</a></li>
+							<li><a href="#">常见问题</a></li>
+							<li><a href="#">注册登录</a></li>
+							<li><a href="#">购买</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">配送与支持</a></li>
+							<li><a href="#">配送方式</a></li>
+							<li><a href="#">在线支付</a></li>
+							<li><a href="#">快递信息</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">售后政策</a></li>
+							<li><a href="#">退款说明</a></li>
+							<li><a href="#">返修/退换</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">会员中心</a></li>
+							<li><a href="#">我的订单</a></li>
+							<li><a href="#">我的服务</a></li>
+							<li><a href="#">会员服务</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">服务邮箱</a></li>
+							<li><a href="#">热线电话</a></li>
+							<li><a href="#">联系地址</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+	</body>
+	<script type="application/javascript">
+		$(".size-select a,.color-select img").click(function(){
+			$(this).parent().children().removeClass("selected");
+			$(this).addClass("selected");
+		});
+	</script>
+</html>

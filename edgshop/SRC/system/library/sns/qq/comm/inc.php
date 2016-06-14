@@ -1,0 +1,1 @@
+{"appid":"101314242","appkey":"b6558f565cf380c48f28f60ea5835b29","callback":"http://www.edgteam.cn/account/login/qqcallback","errorReport":true,"storageType":"file","host":"localhost","user":"root","password":"root","database":"test","scope":null}

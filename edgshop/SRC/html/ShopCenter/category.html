@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>商城首页</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/my.css" />
+		<link rel="stylesheet" type="text/css" href="../css/banner.css"/>
+		<script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-ui-1.9.2.custom.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cxslide.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/allinone_thumbnailsBanner.js" type="text/javascript" charset="utf-8"></script>
+				<script type="text/javascript" src="../js/jquery.imagezoom.min.js" ></script>
+		<script src="../js/my.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tree.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header class="bgimg">
+			<img src="../img/banner1.png" class="center-block mgmid" />
+		</header>
+		<!--
+        	搜索 登录 购物车
+        -->
+		<div class="search-login container">
+			<img src="../img/edg_shop.png" />
+			<div class="search-input">
+				<div class="flexsearch">
+					<div class="flexsearch--wrapper">
+						<form class="flexsearch--form" action="#" method="post">
+							<div class="flexsearch--input-wrapper" style="font-size: 12px;">
+								<input class="flexsearch--input" type="search" placeholder="搜索" style="">
+							</div>
+							<!--<input class="flexsearch--submit" type="submit" value="➜">-->
+							<button class="flexsearch--submit">
+								<span class="glyphicon glyphicon-search" aria-hidden="true" style=""></span>
+							</button>
+							<button id="dropdownMenu1" class="flexsearch--drop" data-toggle="dropdown">
+								所有类别
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="right:0;left: inherit;">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="log-reg">
+				<a href="#">登录</a>&nbsp;&nbsp;丨&nbsp;&nbsp;<a href="#">注册</a>
+				<img src="../img/cart.png" />
+				<div class="tooltip top" role="tooltip">
+					<div class="tooltip-arrow"></div>
+					<div class="tooltip-inner">
+						20
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+        	Menu
+        -->
+		<nav class="navbar navbar-inverse rd0">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">首页</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">上衣<span class="sr-only">(current)</span></a></li>
+						<li><a href="#">裤子</a></li>
+						<li><a href="#">鞋子</a></li>
+						<li><a href="#">外设</a></li>
+						<li><a href="#">创意</a></li>
+					</ul>
+					<div class="tooltip top" role="tooltip">
+						<div class="tooltip-arrow"></div>
+						<div class="tooltip-inner">
+							new
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!--
+			分类，tree
+		-->
+		<div id="person-center" class="container min-content-height">
+			<div class="left-menu caty-cent">
+				<ul id="tree-cat">
+					<li><a href="#">全部分类	</a>
+	                    <ul>
+	                        <li>Company Maintenance</li>
+	                        <li>Employees</li>
+	                        <li>Human Resources</li>
+	                    </ul>
+	                </li>
+	                <li locahref="/category?id=59"><a href="#">上衣	</a>
+	                    <ul>
+	                        <li>Company Maintenance</li>
+	                        <li>Employees</li>
+	                        <li>Human Resources</li>
+	                    </ul>
+	                </li>
+	                <li><a href="#">裤子</a>
+	                    <ul>
+	                        <li>Company Maintenance</li>
+	                        <li>Employees</li>
+	                        <li>Human Resources</li>
+	                    </ul>
+	                </li>
+	                <li><a href="#">鞋子</a>
+	                    <ul>
+	                        <li>Company Maintenance</li>
+	                        <li>Employees</li>
+	                        <li>Human Resources</li>
+	                    </ul>
+	                </li>
+	                <li><a href="#">外设</a>
+	                    <ul>
+	                        <li>Company Maintenance</li>
+	                        <li>Employees</li>
+	                        <li>Human Resources</li>
+	                    </ul>
+	                </li>
+	                <li><a href="#">创意</a>
+	                    <ul>
+	                        <li>Company Maintenance</li>
+	                        <li>Employees</li>
+	                        <li>Human Resources</li>
+	                    </ul>
+	                </li>
+	            </ul>
+			</div>
+			<div class="right-top-content" >
+				<div class="selected-conditoin">
+					<strong>
+						已选条件：
+					</strong>
+					<button href="javascript:void(0);" class="btn btn-labeled btn-black"> BOYS <span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span></button>
+				</div>
+				<div class="conditions">
+					<div id="male">
+						<strong>性别：</strong>
+						<span id="boys" class="cat-tag">
+							BOYS
+						</span>
+						<span id="girls" class="cat-tag">
+							GIRLS
+						</span>
+					</div>
+					<div id="c-size">
+						<strong>尺码：</strong>
+						<span class="cat-tag">M</span>
+						<span class="cat-tag">L</span>
+						<span class="cat-tag">S</span>
+						<span class="cat-tag">XL</span>
+					</div>
+				</div>
+			</div>
+			<div class="right-buttom-content">
+				
+			</div>
+		</div>
+		<a href="#" title="回到顶部" class="scrollup text-center"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+		<footer class="">
+			<div class="container">
+				<div class="row fuwu">
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 mian">
+						<p>满<strong>128</strong>元免运费</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 zhen">
+						<p><strong>EDG</strong>官方正品保证</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 qi">
+						<p><strong>7天</strong>无理由退换</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 shun">
+						<p><strong>顺丰</strong>快递服务</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">购物指南</a></li>
+							<li><a href="#">常见问题</a></li>
+							<li><a href="#">注册登录</a></li>
+							<li><a href="#">购买</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">配送与支持</a></li>
+							<li><a href="#">配送方式</a></li>
+							<li><a href="#">在线支付</a></li>
+							<li><a href="#">快递信息</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">售后政策</a></li>
+							<li><a href="#">退款说明</a></li>
+							<li><a href="#">返修/退换</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">会员中心</a></li>
+							<li><a href="#">我的订单</a></li>
+							<li><a href="#">我的服务</a></li>
+							<li><a href="#">会员服务</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">服务邮箱</a></li>
+							<li><a href="#">热线电话</a></li>
+							<li><a href="#">联系地址</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+	</body>
+
+</html>

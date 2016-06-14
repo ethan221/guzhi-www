@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>商城首页</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/address.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/city.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/my.css"/>
+		<script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/city.min.js" type="text/javascript"></script>
+		<script src="../js/my.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cxslide.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/allinone_thumbnailsBanner.js" ></script>
+		<script type="text/javascript" src="../js/jquery.imagezoom.min.js" ></script>
+		<script type="text/javascript" src="../js/tree.js" ></script>
+	</head>
+	<body>
+		<header class="bgimg">
+			<img src="../img/banner1.png" class="center-block mgmid"/>
+		</header>
+		<!--
+        	搜索 登录 购物车
+        -->
+		<div class="search-login container">
+			<img src="../img/edg_shop.png"/>
+			
+			<div class="log-reg">
+				<a href="#">登录</a>&nbsp;&nbsp;丨&nbsp;&nbsp;<a href="#">注册</a>
+				<img src="../img/cart.png"/>
+				<div class="tooltip top" role="tooltip">
+			      <div class="tooltip-arrow"></div>
+			      <div class="tooltip-inner">
+			        20
+			      </div>
+			    </div>
+			</div>
+		</div>
+		<!--
+        	Menu
+        -->
+		<nav class="navbar navbar-inverse rd0">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">首页</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">上衣<span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">裤子</a></li>
+		        <li><a href="#">鞋子</a></li>
+		        <li><a href="#">外设</a></li>
+		        <li><a href="#">创意</a></li>
+		      </ul>
+		      <div class="tooltip top" role="tooltip">
+			    	<div class="tooltip-arrow"></div>
+		            <div class="tooltip-inner">
+		        		new
+		    		</div>
+			    </div>
+		    </div>
+		  </div>
+		</nav>
+		<!--个人中心-->
+		<div id="person-center" class="container">
+				<div class="left-menu">
+					<div class="top-bar">
+						&nbsp;&nbsp;会员中心&nbsp; <span>Member Center</span>
+					</div>
+					<div class="header-img">
+						<img src="../img/edg_logo.png" />
+						<p class="text-center">Levilu1989</p>
+					</div>
+					<div class="dingdan">
+						<ul class="list-unstyled comment-style">
+							<li>我的订单</li>
+							<li class="current"><a href="order.html">全部订单</a></li>
+							<li><a href="order.html">待付款</a></li>
+							<li><a href="order.html">已收货</a></li>
+							<li><a href="order.html">已取消</a></li>
+						</ul>
+						<ul class="list-unstyled comment-style">
+							<li>评价管理</li>
+							<li ><a href="comment.html">待评价商品&nbsp;&nbsp;<span class="badge">42</span></a></li>
+							<li><a href="evaluate.html">我的评价</a></li>
+						</ul>
+						<ul class="list-unstyled comment-style">
+							<li>个人信息</li>
+							<li><a href="modify.html">修改密码</a></li>
+							<li><a href="address.html">收货地址</a></li>
+							<li><a href="coupon.html">优惠券</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- <div class="right-content">
+					<div class="top-bar">
+						&nbsp;&nbsp;未评价商品&nbsp; <span>Goods not evaluated</span>
+					</div>	
+					<div class="main-content">
+						<div class=" head-div">
+							<div class="col-md-7 col-lg-7 col-xs-7 col-sm-7 text-center">商品名称</div>
+							<div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 text-center">购买时间</div>
+							<div class="col-md-3 col-lg-3 col-xs-3 col-sm-3 text-center">操作</div>
+						</div>
+						<div class="body-div" id="comment-list">
+							<div class="repeat">
+								<div class="detail pull-left">
+									<img src="../img/newest/4.png"/>
+									<div class="pull-left">
+										<p>MADNESS MAN BASEBALL JACKET</p>
+										<p>潮流白色夹克衫</p>
+									</div>
+								</div>
+								<div class="time pull-left text-center"><p class="center-block">2016-03-31</p></div>
+								<div class="im-discuss pull-left  text-center"><button class="center-block btn btn-danger" keyid="1234">马上评价</button></div>
+							</div>
+							
+							<div class="repeat">
+								<div class="detail pull-left">
+									<img src="../img/newest/4.png"/>
+									<div class="pull-left">
+										<p>MADNESS MAN BASEBALL JACKET</p>
+										<p>潮流白色夹克衫</p>
+									</div>
+								</div>
+								<div class="time pull-left text-center"><p class="center-block">2016-03-31</p></div>
+								<div class="im-discuss pull-left  text-center"><button class="center-block btn btn-danger">马上评价</button></div>
+							</div>
+							<div class="repeat">
+								<div class="detail pull-left">
+									<img src="../img/newest/4.png"/>
+									<div class="pull-left">
+										<p>MADNESS MAN BASEBALL JACKET</p>
+										<p>潮流白色夹克衫</p>
+									</div>
+								</div>
+								<div class="time pull-left text-center"><p class="center-block">2016-03-31</p></div>
+								<div class="im-discuss pull-left  text-center"><button class="center-block btn btn-danger">马上评价</button></div>
+							</div>
+							<div class="repeat">
+								<div class="detail pull-left">
+									<img src="../img/newest/4.png"/>
+									<div class="pull-left">
+										<p>MADNESS MAN BASEBALL JACKET</p>
+										<p>潮流白色夹克衫</p>
+									</div>
+								</div>
+								<div class="time pull-left text-center"><p class="center-block">2016-03-31</p></div>
+								<div class="im-discuss pull-left  text-center"><button class="center-block btn btn-danger">马上评价</button></div>
+							</div>
+							<div class="repeat">
+								<div class="detail pull-left">
+									<img src="../img/newest/4.png"/>
+									<div class="pull-left">
+										<p>MADNESS MAN BASEBALL JACKET</p>
+										<p>潮流白色夹克衫</p>
+									</div>
+								</div>
+								<div class="time pull-left text-center"><p class="center-block">2016-03-31</p></div>
+								<div class="im-discuss pull-left  text-center"><button class="center-block btn btn-danger">马上评价</button></div>
+							</div>
+							<div class="repeat">
+								<div class="detail pull-left">
+									<img src="../img/newest/4.png"/>
+									<div class="pull-left">
+										<p>MADNESS MAN BASEBALL JACKET</p>
+										<p>潮流白色夹克衫</p>
+									</div>
+								</div>
+								<div class="time pull-left text-center"><p class="center-block">2016-03-31</p></div>
+								<div class="im-discuss pull-left  text-center"><button class="center-block btn btn-danger">马上评价</button></div>
+							</div>
+						</div>
+					</div>
+					<div class="foot-page">
+						<nav class="">
+						  	<ul class="pagination">
+						        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+						        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+						        <li><a href="#">2</a></li>
+						        <li><a href="#">3</a></li>
+						        <li><a href="#">4</a></li>
+						        <li><a href="#">5</a></li>
+						        <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+						        <li>
+						        	共4页，到第<input class="form-control" type="text" name="page"/>页 
+						        	<button class="btn btn-danger btn-sm">确认</button>
+								</li>
+						     </ul>
+						</nav>
+					</div>
+				</div> -->
+				<!-- 收货地址 -->
+				<!-- <style>
+					.receiptP{width: 16.666666667%;border: 1px solid #CFCFCF;height: 130px;}
+					.receiptAdd{width: 33.333333333%;border-top: 1px solid #CFCFCF;border-bottom: 1px solid #CFCFCF;height: 130px;}
+					.receiptAdd .center-block{line-height: 20px;padding:0 1em;}
+					.receiptOperate{width: 33.333333333%;border: 1px solid #CFCFCF;height: 130px;}
+					.default{width: 30%;}
+					.span-center{position: relative;text-align: center;vertical-align: middle;top: 35%;margin-top:0px;margin-right: .6em;}
+					.receipt{width: 50%;font-size: 1.2em;font-weight: bold;padding:.8em 1em .2em;}
+					.addReceipt{width: 50%;font-size: 1.2em;font-weight: bold;padding:.8em 1em .2em;text-align: right;}
+				</style>
+ -->				<div class="right-content">
+					<div class="top-bar">
+						&nbsp;&nbsp;收货地址&nbsp; <span>Receipt address</span>
+					</div>	
+					<p class="receipt pull-left">已有<span>2</span>个地址（最多保存10个）</p>
+					<p class="addReceipt  pull-right">添加收货地址</p>
+
+					<div class="main-content Address">
+						<div class=" head-div">
+							<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 text-left">添加收货地址</div>
+						</div>
+						<div class="body-div" id="comment-list">
+							<form id="addReceipt" name="form1">
+								<div class="infolist">
+	                            <lable>所在地区   </lable>
+	                            <div class="liststyle">
+	                                <span id="Province">
+	                                    <i>请选择省份</i>
+	                                    <ul>
+	                                        <li><a href="javascript:void(0)" alt="请选择省份">请选择省份</a></li>
+	                                    </ul>
+	                                    <input type="hidden" name="cho_Province" value="请选择省份">
+	                                </span>
+	                                <span id="City">
+	                                    <i>请选择城市</i>
+	                                    <ul>
+	                                        <li><a href="javascript:void(0)" alt="请选择城市">请选择城市</a></li>
+	                                    </ul>
+	                                    <input type="hidden" name="cho_City" value="请选择城市">
+	                                </span>
+	                                <span id="Area">
+	                                    <i>请选择地区</i>
+	                                    <ul>
+	                                        <li><a href="javascript:void(0)" alt="请选择地区">请选择地区</a></li>
+	                                    </ul>
+	                                    <input type="hidden" name="cho_Area" value="请选择地区">
+	                                </span>
+	                            </div>
+	                        </div>
+								<span class="pull-left for-form">详细地址</span><input type="text" name="account" class="form-control form-address pull-left" placeholder="请输入您的手机号码" autofocus />
+					    		<span class="pull-left for-form">详细地址</span><input type="text" name="account" class="form-control form-address pull-left" placeholder="请输入您的手机号码" autofocus />
+					    		<span class="pull-left for-form">详细地址</span><input type="text" name="account" class="form-control form-address pull-left" placeholder="请输入您的手机号码" autofocus />
+					    		<input name="Fruit" type="checkbox" value="dd" style="margin:2em 1em 0 2em;"/><span style="line-height:2em;">设为默认</span>
+					    		<button class="btn btn-add" type="submit">确定</button>
+					    		<button class="btn btn-cancel" type="submit">取消</button>
+							</form>
+						</div>
+					</div>
+
+
+
+
+
+					<div class="main-content addressList">
+						<div class=" head-div">
+							<div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 text-center">收货人</div>
+							<div class="col-md-4 col-lg-4 col-xs-4 col-sm-4 text-center">地址</div>
+							<div class="col-md-2 col-lg-2 col-xs-2 col-sm-2 text-center">联系电话</div>
+							<div class="col-md-4 col-lg-4 col-xs-4 col-sm-4 text-center">操作</div>
+						</div>
+						<div class="body-div" id="comment-list">
+							<!-- <div class="repeat">
+								<div class="receiptP pull-left  text-center"><p class="center-block">陈先生</p></div>
+								<div class="receiptAdd pull-left text-center"><p class="center-block">广东省广州市海珠区赤岗北路瑞福大厦613-615房</p></div>
+								<div class="im-discuss pull-left  text-center"><p class="center-block">15820202020</p></div>
+								<div class="receiptOperate pull-left  text-center"><span class="span-center">编辑</span><span  class="span-center">|</span><span  class="span-center">删除</span><span class="btn btn-danger default span-center">设为默认</span></div>
+							</div> -->
+							<style >
+								.addressList .myList{width: 100%;text-align: center;}
+								.address-name{width: 15%}
+								.address-add{width: 30%;padding:0 1em;}
+								.address-phone{width: 23%}
+								.address-choose{width: 30%}
+								.address-choose	span{margin-right: .6em;}
+							</style>
+
+							<table border="1" class="myList" >
+							  <tr>
+							    <td class="address-name">温雯雯</td>
+							    <td class="address-add">广东省广州市海珠区赤岗北路瑞福大厦613-615房</td>
+							    <td class="address-phone">2016-03-31</td>
+							    <td class="address-choose"><span class="edit">编辑</span><span  class="">|</span><span  class="delate">删除</span><span class="btn btn-danger default ">设为默认</span></td>
+							  </tr>
+							</table>
+							
+							<table border="1" class="myList" >
+							  <tr>
+							    <td class="address-name">温雯雯</td>
+							    <td class="address-add">广东省广州市海珠区赤岗北路瑞福大厦613-615房</td>
+							    <td class="address-phone">2016-03-31</td>
+							    <td class="address-choose"><span class="edit">编辑</span><span  class="">|</span><span  class="delate">删除</span><span class="btn btn-danger default ">设为默认</span></td>
+							  </tr>
+							</table>
+						</div>
+					</div>
+					<div class="foot-page">
+						<nav class="">
+						  	<ul class="pagination">
+						        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+						        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+						        <li><a href="#">2</a></li>
+						        <li><a href="#">3</a></li>
+						        <li><a href="#">4</a></li>
+						        <li><a href="#">5</a></li>
+						        <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+						        <li>
+						        	共4页，到第<input class="form-control" type="text" name="page"/>页 
+						        	<button class="btn btn-danger btn-sm">确认</button>
+								</li>
+						     </ul>
+						</nav>
+					</div>
+				</div>
+		</div>
+<a href="#" title="回到顶部" class="scrollup text-center"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+		<footer class="">
+			<div class="container">
+				<div class="row fuwu">
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 mian">
+						<p>满<strong>128</strong>元免运费</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 zhen">
+						<p><strong>EDG</strong>官方正品保证</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 qi">
+						<p><strong>7天</strong>无理由退换</p>
+					</div>
+					<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3 shun">
+						<p><strong>顺丰</strong>快递服务</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">购物指南</a></li>
+							<li><a href="#">常见问题</a></li>
+							<li><a href="#">注册登录</a></li>
+							<li><a href="#">购买</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">配送与支持</a></li>
+							<li><a href="#">配送方式</a></li>
+							<li><a href="#">在线支付</a></li>
+							<li><a href="#">快递信息</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">售后政策</a></li>
+							<li><a href="#">退款说明</a></li>
+							<li><a href="#">返修/退换</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">会员中心</a></li>
+							<li><a href="#">我的订单</a></li>
+							<li><a href="#">我的服务</a></li>
+							<li><a href="#">会员服务</a></li>
+						</ul>
+					</div>
+					<div class="btm">
+						<ul class="list-unstyled">
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">服务邮箱</a></li>
+							<li><a href="#">热线电话</a></li>
+							<li><a href="#">联系地址</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+	</body>
+</html>
